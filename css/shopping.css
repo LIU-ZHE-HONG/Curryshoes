@@ -1,0 +1,66 @@
+@import url("reset.css");
+@import url("index.css");
+ /*section*/
+section{
+	width: 1260px;
+}
+
+section.basketball{
+	padding: 125px 120px 0;
+	background-image: url(../img/basketball-count.png);
+    width: 1140px;
+    margin: 0 60px;
+	box-sizing: border-box;
+}
+section.basketball h2{
+  font-size: 48px;
+} 
+ /*table*/
+
+table{
+	width: 700px;
+	margin:0 auto;
+	border:5px solid black
+}
+
+tr td{
+	font-size: 24px;
+}
+
+.list-title{
+	background-color: #e01a33;
+	color: white;
+	text-align: center;
+}
+
+.list-no{
+	width: 50px;
+}
+
+.list-tl{
+	text-align: left;
+}
+
+td{
+	border: 1px solid #ccc;
+	padding: 20px;
+	text-align: center;
+}
+
+/*footer*/
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    width: 1260px;
+    height: 280px;
+    
+}
+
+footer p{
+    display: block;
+    width: 540px;
+    height: 250px;
+    font-size: 36px;
+    margin: 0 auto;
+}

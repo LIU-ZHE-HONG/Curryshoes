@@ -1,0 +1,68 @@
+@import url("reset.css");
+@import url("logo.css");
+
+/*about-page*/
+
+
+/*section*/
+section{
+    width: 1260px;
+  }
+  
+  section .section-wrapper{
+    background-image: url(../img/background.png);
+    width: 1140px;
+    margin: 0 60px;
+    position: relative;
+  }
+h2{
+    background-color: blue;
+    width: 380px;
+    text-align: center;
+    height: 125px;
+    margin-bottom: 25px;
+    line-height: 125px;
+    display: block;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.image{
+    display: block;
+    width: 700px;
+    
+}
+
+.image p{
+    border: 1px solid black;
+    margin: 40px 0 105px;
+    display: block;
+    width: 925px;
+    height: 170px;
+    padding-top: 60px;
+    font-size: 24px;
+
+}
+
+.image1 img{
+    width: 995px;
+    height: 570px;
+    margin-bottom: 40px;
+   
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    width: 1440px;
+    height: 280px;
+   
+}
+    
+footer p{
+    font-size: 36px;
+    display: block;
+    width: 775px;
+    height: 200px;
+    margin-left: 300px;
+}

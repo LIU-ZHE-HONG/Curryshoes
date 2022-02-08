@@ -1,0 +1,77 @@
+@import url("reset.css");
+@import url("logo.css");
+
+
+/*product-page*/
+
+section{
+    width: 1260px;
+}
+  
+section .section-wrapper{
+    background-image: url(../img/background.png);
+    width: 1140px;
+    margin: 0 60px;
+    
+}
+
+/*image*/
+.image{
+    display: flex;
+    position: relative;  
+}
+
+.image h2{
+    background-color: blue;
+    width: 380px;
+    text-align: center;
+    height: 125px;
+    margin-bottom: 25px;
+    line-height: 125px;
+    display: block;
+    font-weight: bold;
+    font-size: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.image .shoes1{
+    margin: 0 70px;
+}
+.image .shoes1 a{
+    display: block;
+    margin: 245px 0;
+    text-decoration: none;
+    color: #000000; 
+}
+
+.image img{
+    display: block;
+    width: 190px;
+    height: 200px;
+}
+.image p{
+    border: 1px solid black;
+
+}
+
+ /*footer*/
+ footer{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    width: 1260px;
+    height: 280px;
+    
+}
+
+footer p{
+    display: block;
+    width: 540px;
+    height: 250px;
+    font-size: 36px;
+    margin:0 auto;
+}

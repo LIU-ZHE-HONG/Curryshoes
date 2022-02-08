@@ -1,0 +1,81 @@
+@import url("reset.css");
+
+/* 拿掉x軸 */
+body{
+    font-family: arial,verdana,helvetica;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* logo default */
+.background{
+    background-color: #ffff00;
+    width: 1260px;
+    height: 310px;
+}
+
+/* wrapper */
+.wrapper{
+    background-color: #7a7a7a;
+    width: 1260px;
+}
+
+.logo{
+    display: flex;
+    height: 250px;
+    align-items: center;
+    position: relative;
+    
+}
+
+.logo img{
+    width: 380px;
+    height: 150px; 
+}
+
+
+.logo ul{
+    padding-top: 200px;
+    display: flex;
+    margin-left: auto;
+    width: 1060px;
+}
+
+.logo li{
+    background-color: #eeee;    
+    width: 150px;
+    height: 40px;
+    margin:  0 20px;
+    line-height: 40px;
+    flex-grow: 1;
+    
+}
+
+.logo a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #000000; 
+    font-size: 24px; 
+}
+
+.logo li:last-child{
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 0;
+    height: 0;
+}
+.logo li:nth-last-child(2){
+    position: absolute;
+    right: 100px;
+    top: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.logo li:nth-last-child(-n+2) img{
+    width: 70px;
+    height: 70px; 
+}

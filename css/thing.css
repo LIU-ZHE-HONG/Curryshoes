@@ -1,0 +1,83 @@
+@import url("reset.css");
+@import url("logo.css");
+
+
+/*thing-page*/
+
+
+section{
+    width: 1260px;
+}
+  
+section.section-wrapper{
+    background-image: url(../img/background.png);
+    width: 1140px;
+    margin: 0 60px;
+    
+}
+/*product*/
+.product{
+    display: flex;
+}
+
+.product img{
+    width: 460px;
+    height: 460px;
+}
+
+.float-clearfix {
+    clear: both!important;
+}
+
+.product-size-name .pdp-size-title {
+    margin: 15px 0 8px;
+}
+
+.product-size-name .pdp-size ul li {
+    float: left;
+    width: auto;
+    min-width: 44px;
+    padding: 0 10px;
+    height: 38px;
+    border: 1px solid #c7c7c7;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 13px;
+    margin-bottom: 12px;
+    background-color: #c4c4c4;
+}
+
+/*image*/
+.image{
+    display: flex;
+}
+.image img{
+    width: 220px;
+    height: 230px;
+}
+
+.image p{
+    border: 1px solid black;
+
+}
+
+
+
+/*footer*/
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    width: 1440px;
+    height: 280px;
+    
+}
+
+footer p{
+    display: block;
+    width: 540px;
+    height: 250px;
+    font-size: 36px;
+    margin:0 auto;
+}
