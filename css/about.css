@@ -15,6 +15,11 @@ section{
     margin: 0 60px;
     position: relative;
   }
+  .background{
+    background-color: #ffff00;
+    width: 1260px;
+    height: 310px;
+  }
 h2{
     background-color: blue;
     width: 380px;
@@ -55,14 +60,11 @@ footer{
     background-color: #000000;
     color: #ffffff;
     width: 1440px;
-    height: 280px;
-   
 }
     
 footer p{
-    font-size: 36px;
+    font-size: 18px;
     display: block;
     width: 775px;
-    height: 200px;
     margin-left: 300px;
 }

@@ -5,17 +5,11 @@ body{
     font-family: arial,verdana,helvetica;
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-/* logo default */
-.background{
-    background-color: #ffff00;
-    width: 1260px;
-    height: 310px;
+   
 }
 
 /* wrapper */
-.wrapper{
+header{
     background-color: #7a7a7a;
     width: 1260px;
 }
