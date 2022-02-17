@@ -251,8 +251,6 @@ footer{
     background-color: #000000;
     color: #ffffff;
     display: flex;
-    width: 1440px;
-    
     
 }
 
@@ -260,7 +258,7 @@ footer p{
     display: block;
     width: 540px;
     font-size: 18px;
-    margin-left: 55px;
+    margin: 0 auto;
    
 }
 
@@ -284,8 +282,8 @@ footer p{
 }
 
 .move .ig i:hover{
-   color: #E1306C;
+   color:#E1306C;
 } 
 .move .tw i:hover{
-    color: #1DA1F2;
+    color:#1DA1F2;
 }
