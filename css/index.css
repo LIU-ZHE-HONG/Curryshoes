@@ -264,5 +264,28 @@ footer p{
    
 }
 
+/* 懸浮按鈕區 */
+.move{
+    position: fixed;
+    right: 5px;
+    bottom:100px;
+    width: 50px; 
+}
 
-  
+
+.move i{
+    color:#FFD700;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.move .fb i:hover{
+    color:#0000FF;
+}
+
+.move .ig i:hover{
+   color: #E1306C;
+} 
+.move .tw i:hover{
+    color: #1DA1F2;
+}

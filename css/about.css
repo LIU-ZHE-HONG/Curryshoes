@@ -4,16 +4,14 @@
 /*about-page*/
 
 
-/*section*/
-section{
-    width: 1260px;
+/*body*/
+body{
+    background-image: url(../img/background.png);
   }
   
-  section .section-wrapper{
-    background-image: url(../img/background.png);
-    width: 1140px;
-    margin: 0 60px;
-    position: relative;
+  section.section-wrapper{ 
+    width: 1260px;
+    margin: 0 auto;
   }
   .background{
     background-color: #ffff00;

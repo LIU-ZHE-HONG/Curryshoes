@@ -4,14 +4,13 @@
 
 /*product-page*/
 
-section{
-    width: 1260px;
+body{
+    background-image: url(../img/background.png);
 }
   
-section .section-wrapper{
-    background-image: url(../img/background.png);
-    width: 1140px;
-    margin: 0 60px;
+.wrapper{
+    width: 1260px;
+    margin: 0 auto;
     
 }
 .background{

@@ -1,15 +1,15 @@
 @import url("reset.css");
 @import url("index.css");
- /*section*/
-section{
-	width: 1260px;
+/*shopping page*/
+ /*body*/
+body{
+	background-image: url(../img/basketball-count.png);
 }
 
 section.basketball{
 	padding: 125px 120px 0;
-	background-image: url(../img/basketball-count.png);
     width: 1140px;
-    margin: 0 60px;
+    margin: 0 auto;
 	box-sizing: border-box;
 }
 section.basketball h2{

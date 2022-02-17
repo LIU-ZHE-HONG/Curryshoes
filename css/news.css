@@ -3,15 +3,14 @@
 
  /*news page*/
 
-/*section*/
-section{
-  width: 1260px;
+/*body*/
+body{
+  background-image: url(../img/background.png);
 }
 
-section .section-wrapper{
-  background-image: url(../img/background.png);
-  width: 1140px;
-  margin: 0 60px;
+section.section-wrapper{
+  width: 1260px;
+  margin: 0 auto;
   position: relative;
 }
 .background{
@@ -32,7 +31,10 @@ h2{
   font-size: 48px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 640px;
+  bottom: 0;
+  margin: auto;
+
 }
 /*image*/
 .image{
