@@ -12,6 +12,9 @@ body{
     width: 1260px;
     margin: 0 auto;
 }
+.carousel-inner img{
+    width: 100%;
+}
 
     /* character */
 .character{
