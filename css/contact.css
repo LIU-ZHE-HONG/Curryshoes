@@ -6,10 +6,15 @@
 body{
     background-image: url(../img/background.png);
 }
-  
+section{
+    margin: 0 auto;
+}
+
+
 section.section-wrapper{
     width: 1260px;
-    margin: 0 auto;
+    margin-left: 50px;
+    display: block;
 }
 
 section h2{
@@ -23,6 +28,9 @@ section p1{
     font-size: 24px;
     text-align: center;
     display: block;
+}
+section h2, section p1{
+    padding-top: 125px;
 }
 
 ::placeholder{ 
@@ -59,7 +67,7 @@ section div{
     display: flex;
 }
 section div img{
-    margin:165px 140px 235px 0 ;
+    margin:165px 140px 235px 100px ;
 }
 
 section div ul {
