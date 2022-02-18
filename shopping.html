@@ -2,92 +2,101 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <title>購物車</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shopping.css">
+    <title>購物車</title>
 </head>
 
 <body>
-
+    <!-- 主選單 -->
     <header class="logo">
-      <a href="index.html"><img src="svg/logo.svg" alt=""></a>
-      <ul>
-        <li><a href="news.html">最新消息</a></li>
-        <li><a href="product.html">商品專區</a></li>
-        <li><a href="about.html">關於我們</a></li>
-        <li><a href="contact.html">聯絡我們</a></li>
-        <li><a href="index.html"><img src="img/home.png" alt=""></a></li>
-        <li><a href="shopping.html"><img src="img/shopping-car.png"></a></li>
-      </ul>
+        <a href="index.html"><img src="svg/logo.svg" alt=""></a>
+        <ul>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="product.html">商品專區</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+            <li><a href="index.html"><img src="img/home.png" alt=""></a></li>
+            <li><a href="shopping.html"><img src="img/shopping-car.png"></a></li>
+        </ul>
     </header>
-  
-  <section>
-  <div class="basketball">
-    <h2>購物車</h2>
-    <img src="img/basketball-count.png" alt="">
-  <table>
-    <tr class="list-title">
-      <td class="list-no">商品</td>
-      <td class='list-tl'>單價</td>
-      <td>數量</td>
-      <td>小計</td>
-    <tr>
-      <td>Curry flow blue 9</td>
-      <td class="list-tl">$4550</td>
-      <td>1</td>
-      <td>$4550</td>
-    </tr>
-    <tr>
-      <td>Curry flow black 9</td>
-      <td class="list-tl">$4770</td>
-      <td>1</td>
-      <td>$4770</td>
-    </tr>
-  </div>
-  </table>
-  <div class="money">
-    <h2>付款方式</h2>
-    <ul>
-      <li>
-        <input class="ATM" type="radio" name="xx" />
-        <span>ATM轉帳</span>
-        <input class='card' type="radio" name="xx" />
-        <span>線上刷卡</span>
-        <input class='pay' type="radio" name="xx" />
-        <span>貨到付款</span>
-      </li>
-    </ul>
-    <div class="send">
-      <h2>配送資訊</h2>
-      <ul>
-        <li>
-          <p>姓名</p>
-          <input class="name" type="text" placeholder="請輸入本名..." />
-        </li>
-        <li>
-          <p>連絡電話</p>
-          <input class="phone" type="text" />
-        </li>
-        <li>
-          <p>電子郵件</p>
-          <input class="address" type="text" />
-        </li>
-        <li>
-          <input class="send" type="submit" value="確認" />
-          <input class="send" type="submit" value="取消" />
-        </li>
 
-      </ul>
+    <!-- 商品排列 -->
+    <div class="wrapper">
+        <div class="basketball">
+            <h2>購物車</h2>
+        </div>
+        <table>
+            <tr class="list-title">
+                <td class="list-no">商品</td>
+                <td class='list-tl'>單價</td>
+                <td>數量</td>
+                <td>小計</td>
+            <tr>
+                <td>Curry flow blue 9</td>
+                <td class="list-tl">$4550</td>
+                <td>1</td>
+                <td>$4550</td>
+            </tr>
+            <tr>
+                <td>Curry flow black 9</td>
+                <td class="list-tl">$4770</td>
+                <td>1</td>
+                <td>$4770</td>
+            </tr>
+        </table>
+
+        <!-- 付款方式 -->
+        <section>
+            <div class="money">
+                <h2>付款方式</h2>
+                <ul>
+                    <li>
+                        <input class="ATM" type="radio" name="xx" />
+                        <span>ATM轉帳</span>
+                    </li>
+                    <li>
+                        <input class='card' type="radio" name="xx" />
+                        <span>線上刷卡</span>
+                    </li>
+                    <li>
+                        <input class='pay' type="radio" name="xx" />
+                        <span>貨到付款</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 配送資訊 -->
+            <nav class="send">
+                <h2>配送資訊</h2>
+                <ul>
+                    <li>
+                        <p>收件人</p>
+                        <input class="name" type="text" placeholder="請輸入本名..." />
+                    </li>
+                    <li>
+                        <p>連絡電話</p>
+                        <input class="phone" type="text" />
+                    </li>
+                    <li>
+                        <p>地址</p>
+                        <input class="address" type="text" />
+                    </li>
+                    <li>
+                        <input class="send" type="submit" value="確認" />
+                        <input class="send" type="submit" value="取消" />
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </div>
-  </div>
-</section> 
-  <footer>
-    <p>本網站為緯育TibaMe前端設計工程師班TFD105學員專題作品，本平台僅供學習展示之用。
-      若有侵權疑慮，您可以私訊(TibaMe-前端設計工程師養成班)，後續會由專人協助處理。
-    </p>
-  </footer>
+    <footer>
+        <p>本網站為緯育TibaMe前端設計工程師班TFD105學員專題作品，本平台僅供學習展示之用。
+            若有侵權疑慮，您可以私訊(TibaMe-前端設計工程師養成班)，後續會由專人協助處理。
+        </p>
+    </footer>
 </body>
 
 </html>

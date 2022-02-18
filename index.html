@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <title>程式菜鳥球鞋</title>
@@ -16,7 +17,8 @@
 <body>
 
     <!-- 主選單 -->
-    <header class="logo">
+<header>
+    <div class="logo">
         <a href="index.html"><img src="svg/logo.svg" alt=""></a>
         <ul>
             <li><a href="news.html">最新消息</a></li>
@@ -26,8 +28,13 @@
             <li><a href="index.html"><img src="img/home.png" alt=""></a></li>
             <li><a href="shopping.html"><img src="img/shopping-car.png"></a></li>
         </ul>
-    </header>
-
+        <button type="button" class="hamburger_icon">
+            <span class="-hr -top"></span>
+            <span class="-hr -middle"></span>
+            <span class="-hr -bottom"></span>
+        </button>
+    </div>
+</header>
     <!-- 輪播 -->
     <div id="carousel-id" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -78,8 +85,14 @@
                 <p1>史上最狂的三分射手</p1>
             </div>
         </section>
+        <nav class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2CHT0q8QBy4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </nav>
         <!--商品排列 -->
-        <div>
+        <div class="picture">
             <h2>熱銷商品</h2>
             <div class="image">
                 <div>
@@ -211,6 +224,16 @@
         $('.carousel').carousel({
             interval: 3000
         })
+        // JavaScript 版本：DOM 載入完成之後執行
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // 按鈕狀態的切換
+            var hamburger_icon = document.getElementsByClassName("hamburger_icon")[0];
+            hamburger_icon.addEventListener("click", function () {
+                hamburger_icon.classList.toggle("-on");
+            });
+
+        });
     </script>
 </body>
 

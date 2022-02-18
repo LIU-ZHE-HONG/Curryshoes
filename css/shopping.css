@@ -1,19 +1,26 @@
 @import url("reset.css");
-@import url("index.css");
+@import url("logo.css");
 /*shopping page*/
  /*body*/
 body{
 	background-image: url(../img/basketball-count.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.wrapper{
+	width: 1260px;
+	margin: 0 auto;
 }
 
-section.basketball{
+ .basketball{
 	padding: 125px 120px 0;
     width: 1140px;
     margin: 0 auto;
 	box-sizing: border-box;
 }
-section.basketball h2{
+ .basketball h2{
   font-size: 48px;
+  text-align: center;
 } 
  /*table*/
 
@@ -46,6 +53,31 @@ td{
 	padding: 20px;
 	text-align: center;
 }
+
+section{
+	display: flex;
+	width: 280px;
+	margin-left: 250px;
+	
+}
+section div{
+    text-align: center;
+    margin: 0 auto;
+}
+
+section h2{
+    margin-bottom: 50px;
+    margin-top: 0px;
+    font-size: 48px;
+}
+section ul{
+    display: inline-block;
+    width: 430px;
+    height: 250px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
 
 /*footer*/
 footer{

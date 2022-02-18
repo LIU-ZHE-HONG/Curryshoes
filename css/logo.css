@@ -51,6 +51,10 @@ header{
     color: #000000; 
     font-size: 24px; 
 }
+.logo a:hover{
+    color: red;
+}
+
 
 .logo li:last-child{
     position: absolute;
@@ -72,3 +76,83 @@ header{
     width: 70px;
     height: 70px; 
 }
+
+   /* 基本按鈕樣式 */
+   button.hamburger_icon{
+    border: 1px solid #ffff00;
+    width: 45px;
+    height: 45px;
+    
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background: none;
+  }
+  
+  /* 每一條橫線的樣式 */
+  button.hamburger_icon span.-hr{
+    height: 1px;
+    width: 80%;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* 最上面那條線的樣式 */
+  button.hamburger_icon span.-hr.-top{
+    top: 25%;
+  }
+  
+  /* 最下面那條線的樣式 */
+  button.hamburger_icon span.-hr.-bottom{
+    top: 75%;
+  }
+  /* -on 的狀態 */
+  /* 上方的線 */
+  button.hamburger_icon.-on span.-hr.-top{
+    transform-origin: top left;
+    top: 6px;
+    left: 5px;
+    width: 100%;
+    transform: rotate(45deg);
+  }
+  /* 中間的線 */
+  button.hamburger_icon.-on span.-hr.-middle{
+    opacity: 0;
+  }
+  /* 下方的線 */
+  button.hamburger_icon.-on span.-hr.-bottom{
+    transform-origin: top left;
+    bottom: 6px;
+    left: 5px;
+    width: 100%;
+    transform: rotate(-45deg);
+  }
+
+  @media screen and (max-width:768px){
+    header{
+        display: inline-block;
+    }
+    .hamburger_icon{
+        display: inline-block;
+    }
+   
+    
+     .logo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px; 
+        height: 36px;
+        justify-content: space-between;
+        min-height: 44.49px;
+    }
+     .logo img{
+        top: -21%;
+    }
+    
+}
+
