@@ -4,16 +4,12 @@
 /*body*/
 
 body{
-    width: 1260px;
+    background-image: url(../img/background.png);
 }
   
 section.section-wrapper{
-    padding: 125px 120px 0;
-    background-image: url(../img/background.png);
     width: 1140px;
     margin: 0 auto;
-    box-sizing: border-box;
-    
 }
 
 section h2{
