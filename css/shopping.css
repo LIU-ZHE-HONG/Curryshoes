@@ -83,8 +83,7 @@ section ul{
 footer{
     background-color: #000000;
     color: #ffffff;
-    display: flex;
-    width: 1260px;    
+    display: flex;  
 }
 
 footer p{
