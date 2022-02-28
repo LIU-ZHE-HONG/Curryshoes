@@ -13,28 +13,33 @@
 
 </head>
 
-
 <body>
 
     <!-- 主選單 -->
-<header>
-    <div class="logo">
-        <a href="index.html"><img src="svg/logo.svg" alt=""></a>
-        <ul>
-            <li><a href="news.html">最新消息</a></li>
-            <li><a href="product.html">商品專區</a></li>
-            <li><a href="about.html">關於我們</a></li>
-            <li><a href="contact.html">聯絡我們</a></li>
-            <li><a href="index.html"><img src="img/home.png" alt=""></a></li>
-            <li><a href="shopping.html"><img src="img/shopping-car.png"></a></li>
-        </ul>
-        <button type="button" class="hamburger_icon">
-            <span class="-hr -top"></span>
-            <span class="-hr -middle"></span>
-            <span class="-hr -bottom"></span>
-        </button>
-    </div>
-</header>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="svg/logo.svg" alt=""></a>
+            <ul>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="product.html">商品專區</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+            <div class="icon">
+                <a href="index.html">
+                    <img src="img/home.png" alt="">
+                </a>
+                <a href="shopping.html">
+                    <img src="img/shopping-car.png" alt="">
+                </a>
+            </div>
+            <button type="button" class="hamburger_icon">
+                <span class="-hr -top"></span>
+                <span class="-hr -middle"></span>
+                <span class="-hr -bottom"></span>
+            </button>
+        </div>
+    </header>
     <!-- 輪播 -->
     <div id="carousel-id" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -77,20 +82,20 @@
 
     <div class="wrapper">
         <!--人物介紹 -->
-        <section class="character">
+         <section class="character">
             <img src="img/curry.png" alt="">
             <div class="text1">
                 <h2>人物理念</h2>
                 <p>改變現代籃球的那個男人<br>徹底改變世界規則</p>
-                <p1>史上最狂的三分射手</p1>
+                <span>史上最狂的三分射手</span>
             </div>
         </section>
-        <nav class="video">
+        <div class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/2CHT0q8QBy4"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-        </nav>
+        </div> 
         <!--商品排列 -->
         <div class="picture">
             <h2>熱銷商品</h2>
@@ -114,50 +119,6 @@
             </div>
         </div>
 
-        <!--相關優惠活動 -->
-        <div class="information">
-            <ul>
-                <li>
-                    <div class="info_con">
-                        <div class="info_img">
-                            <a href="https://www.nbastore.tw/products?categories=stephen-curry">
-                                <img src="img/curry-cloth.png" alt="">
-                            </a>
-                        </div>
-                        <div class="info_link">
-                            <div class="info_title">
-                                Curry球衣</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="info_con">
-                        <div class="info_img">
-                            <a href="https://www.topbasketball.com.tw/">
-                                <img src="img/decline.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="info_link">
-                            <div class="info_title">
-                                籃球訓練營</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="info_con">
-                        <div class="info_img">
-                            <a href="https://www.twosevenths.com/indoors/fitness-taipei-bymin/">
-                                <img src="img/train.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="info_link">
-                            <div class="info_title">
-                                健身房</div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
 
         <!-- 球隊比賽資訊 -->
         <div class="slide_box">
@@ -184,7 +145,7 @@
     </div>
 
     <!-- 頁尾 -->
-    <footer>
+     <footer>
         <div>
             <p>
                 地址:台北市中山區南京東路號5樓
@@ -203,6 +164,8 @@
             </p>
 
         </div>
+        
+        <!-- 懸浮按鈕區 -->
         <div class="move">
             <a href="https://www.facebook.com/" class="fb">
                 <i class="fab fa-facebook-square"></i>
@@ -214,16 +177,30 @@
                 <i class="fab fa-twitter-square"></i>
             </a>
         </div>
-    </footer>
+    </footer> 
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+
     <script>
+        // (bootstrap)改輪播時間長度 
         $('.carousel').carousel({
             interval: 3000
-        })
+        });
+
+        // 按鈕的點擊
+        $(document).ready(function () {
+            $(".hamburger_icon").on("click", function (e) {
+                e.preventDefault();
+                $("body").toggleClass("menu-show");
+            });
+        });
+
+
+
         // JavaScript 版本：DOM 載入完成之後執行
         document.addEventListener('DOMContentLoaded', function () {
 

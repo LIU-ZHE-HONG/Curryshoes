@@ -1,12 +1,21 @@
 @import url("reset.css");
 @import url("logo.css");
+
 /*shopping page*/
+
  /*body*/
+ *{
+    box-sizing: border-box;
+}
+
 body{
 	background-image: url(../img/basketball-count.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+/* 商品排列 */
+
 .wrapper{
 	width: 1260px;
 	margin: 0 auto;
@@ -27,7 +36,7 @@ body{
 table{
 	width: 700px;
 	margin:0 auto;
-	border:5px solid black
+	border: 1px solid black
 }
 
 tr td{
@@ -80,6 +89,7 @@ section ul{
 
 
 /*footer*/
+
 footer{
     background-color: #000000;
     color: #ffffff;
@@ -88,7 +98,7 @@ footer{
 
 footer p{
     display: block;
-    width: 540px;
     font-size: 18px;
     margin: 0 auto;
+	padding: 10px;
 }

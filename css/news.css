@@ -4,15 +4,16 @@
  /*news page*/
 
 /*body*/
+*{
+  box-sizing: border-box;
+}
+
 body{
   background-image: url(../img/background.png);
 }
 
-section.section-wrapper{
-  width: 1260px;
-  margin: 0 auto;
-  position: relative;
-}
+/* 背景圖 */
+
 .background{
   background-color: #ffff00;
   width: 100%;
@@ -20,20 +21,26 @@ section.section-wrapper{
   display: block;
 }
 
+/*最新消息 */
+
+section .section-wrapper{
+  width: 1260px;
+  margin: 0 auto;
+  position: relative;
+}
+
 h2{
   background-color: blue;
   width: 380px;
   text-align: center;
   height: 125px;
-  margin-bottom: 25px;
   line-height: 125px;
   display: block;
   font-weight: bold;
   font-size: 48px;
   position: absolute;
   right: 0;
-  top: 640px;
-  bottom: 0;
+  top: 0;
   margin: auto;
 
 }
@@ -45,13 +52,11 @@ h2{
 
 .image img{
   width: 580px;
-  height: 385px;
   
 }
 .image p{
   display: block;
   width: 505px;
-  height: 125px;
   font-size: 36px;
 }
 
@@ -62,16 +67,16 @@ h2{
 
 .image1 img{
   width: 480px;
-  height: 360px;
 }
 
 .image1 p{
   display: block;
   width: 825px;
-  height: 45px;
   font-size: 36px;
   margin: 0 auto;
 }
+
+/* 頁尾 */
 
 footer{
   background-color: #000000;
@@ -81,6 +86,6 @@ footer{
 footer p{
   font-size: 18px;
   display: block;
-  width: 775px;
   margin-left: 300px;
+  padding: 10px;
 }

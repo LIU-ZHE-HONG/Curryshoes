@@ -1,178 +1,221 @@
 @import url("reset.css");
 @import url("logo.css");
 
-   /*index-page*/  
+/*index-page*/
 
-    /*body*/
-body{
- background-image: url(../img/background.png);
+/*body*/
+* {
+    box-sizing: border-box;
 }
 
-.wrapper{   
-    width: 1260px;
-    margin: 0 auto;
+body {
+    background-image: url(../img/background.png);
 }
-.carousel-inner img{
+
+/*輪播*/
+.carousel-inner img {
     width: 100%;
 }
 
-    /* character */
-.character{
+/*wrapper*/
+.wrapper {
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+    .wrapper {
+        width: 100%;
+    }
+
+}
+
+/* character */
+.character {
     display: flex;
-    align-content: center;
-    justify-content: center;
     padding-top: 215px;
-}   
-
-.character  img{
-    width: 500px;
-    height: 355px;
-    
+    flex-wrap: wrap;
 }
 
-.character .text1{
-    margin-left: 20px;
-    
-    
+.character .text1 {
+    margin: 0 auto;
+    animation: word 2s 1.5s forwards;
+    opacity: 0;
 }
-.character .text1 h2{
+
+@keyframes word {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.character img {
+    width: 50%;
+    animation: curry 1.5s .5s forwards;
+    opacity: 0;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+
+@keyframes curry {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.character .text1 h2 {
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-} 
-.character .text1 p{
+}
+
+.character .text1 p {
     font-size: 36px;
+    text-align: center;
 }
 
 
-.character p1{
+.character span {
     color: red;
     font-size: 36px;
-}
-
-iframe{
-    margin: 100px auto 0;
     display: block;
-    
-    
+    text-align: center;
 }
 
-   
-.picture h2{
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .character {
+        display: block;
+        padding-top: 100px;
+    }
+
+    .character img {
+        display: block;
+        max-width: 70% !important;
+        height: auto !important;
+    }
+
+    .character .text1 h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .character .text1 p {
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    .character span {
+        color: red;
+        font-size: 18px;
+        display: block;
+        text-align: center;
+
+    }
+}
+
+
+/*影片*/
+
+.video {
+    padding-bottom: calc(100% * 9 / 16);
+    position: relative;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe, .video object, .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+
+
+/*商品排列*/
+.picture h2 {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
-    margin-top: 100px; 
+    margin-top: 100px;
 }
- /* image */
-.image{
+
+.image {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-.image div{
-    margin: 0 40px;
+    flex-wrap: wrap;
 }
 
-.image img{
+.image div {
+    margin: 0 auto;
+}
+
+.image img {
     display: block;
     margin: 0 auto;
     width: 200px;
 
 }
-.image img:hover{
+
+.image img:hover {
     border-bottom: 2px dashed red;
     transform: scale(1.2);
-    
+
+}
+
+@media screen and (max-width:768px) {
+    .image {
+       flex-direction: column;
+       max-width: 70%;
+       height: auto;
+       /* display: block; */
+       align-items: center;
+       justify-content: center;
+    }
+    .picture h2{
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .image img, .image p{
+       display: block;
+       margin-left: 135px;
+    }
+
 }
 
 
-ul,li{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
 
-/*information*/
-.information{
-	width: 1140px;
-	clear: both;
-	background: #000000;
-	margin: 10px auto;
-    
-    
-    
-}
-.information ul{
-	width: 1140px;
-}
-.information li{
-	display: block;
-	float: left;
-	background: #fff;
-	width: 350px;
-	margin:15px 22px 15px 0;
-}
-.information li:first-child{
-	margin-left: 23px;
-}
-.information ul::after{
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.info_con{
-	width: 350px;
-	height:auto;
-}
-
-.info_img{
-	display:inline-block;
-	width: 350px;
-    height: 200px;
-	text-align: center;
-	vertical-align: middle;
-}
-
-.info_img > a{
-	display: inline-block;
-	width: 350px;
-	vertical-align: middle;
-	overflow: hidden;
-	
-}
-
-.info_img > a:hover{
-	background-image: url(../images/info_hover.png);
-    background-repeat: no-repeat;
-}
-.info_img > a:hover img{
-	opacity:.5;
-}
-
-
-.info_img img{
-	width: 350px;
-    height: 230px;
-	overflow: hidden;
-    display: block;
-}
-
-.info_title{
-	font-size: 18px;
-	padding: 0 5px;
-	text-align: center;
-	color: #ffff00;
-	height:28px;
-	line-height: 28px; 
-	overflow: hidden;
-}
-
-
-.slide_box{
+/*球隊比賽資訊*/
+.slide_box {
     width: 100%;
     height: 500px;
     margin-top: 20px;
@@ -186,25 +229,30 @@ ul,li{
     background-repeat: no-repeat;
     background-image: url(../img/warrior.png);
 }
-.contest{
+
+.contest {
     z-index: 1;
     width: 70%;
 }
-.contest h2,.contest p{
+
+.contest h2, .contest p {
     color: white;
     text-align: center;
     margin-top: 20px;
 }
-.contest h2{
+
+.contest h2 {
     font-size: 36px;
     letter-spacing: 2px;
     padding-bottom: 10px;
 }
-.contest p{
+
+.contest p {
     font-size: 20px;
     line-height: 30px;
 }
-.slide_box .over{
+
+.slide_box .over {
     position: absolute;
     top: 0;
     left: 0;
@@ -213,88 +261,131 @@ ul,li{
     background: rgba(0, 0, 0, .5);
 }
 
+@media screen and (max-width:768px) {
+    .slide_box {
+        width: 100%;
+    }
+}
 
 
 /*about*/
 
-.about{
+.about {
     display: flex;
     margin-top: 115px;
     margin-bottom: 50px;
 
 }
-.about div{
+
+.about div {
     text-align: center;
     margin: 0 auto;
 }
 
-.about h2{
+.about h2 {
     margin-bottom: 50px;
     margin-top: 0px;
     font-size: 48px;
 }
 
-.about p{
-    display: block;
-    width: 430px;
-    height: 250px;
+.about p {
     margin-bottom: 50px;
     font-size: 24px;
 }
 
-.about a{
+.about a {
     display: block;
     width: 180px;
-    height: 50px;
     background-color: #484848;
     color: white;
-    line-height: 50px;
+    line-height: 2;
     border-radius: 15px;
     margin: 0 auto;
+    text-decoration: none;
 }
-.about img{
+
+.about img {
     width: 480px;
-    height: 445px;
     margin: 0 auto;
 }
 
-   /*footer*/
-footer{
+@media screen and (max-width: 768px) {
+    .about {
+        display: block;
+    }
+
+   
+
+    .about h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .about p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .about a {
+        margin-bottom: 20px;
+    }
+     .about img {
+        display: block;
+        max-width: 80% !important;
+        height: auto !important;
+    }
+}
+
+/*footer*/
+footer {
     background-color: #000000;
     color: #ffffff;
     display: flex;
+    padding: 10px;
 }
 
-footer p{
+footer p {
     display: block;
-    width: 540px;
     font-size: 18px;
     margin: 0 auto;
-   
+    padding: 10px;
+}
+
+@media screen and (max-width:768px) {
+    footer p {
+        font-size: 12px;
+        display: block;
+        margin: 0 auto;
+    }
+
 }
 
 /* 懸浮按鈕區 */
-.move{
+.move {
     position: fixed;
     right: 5px;
-    bottom:100px;
-    width: 50px; 
+    bottom: 100px;
+    width: 50px;
 }
 
 
-.move i{
-    color:#FFD700;
+.move i {
+    color: #FFD700;
     font-size: 40px;
     margin-top: 20px;
 }
 
-.move .fb i:hover{
-    color:#0000FF;
+.move .fb i:hover {
+    color: #0000FF;
 }
 
-.move .ig i:hover{
-   color:#E1306C;
-} 
-.move .tw i:hover{
-    color:#1DA1F2;
+.move .ig i:hover {
+    color: #E1306C;
+}
+
+.move .tw i:hover {
+    color: #1DA1F2;
 }

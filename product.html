@@ -9,6 +9,8 @@
     <title>商品專區</title>
 </head>
 
+<!-- 主選單 -->
+
 <body>
         <header class="logo">
             <a href="index.html"><img src="svg/logo.svg" alt=""></a>
@@ -17,12 +19,28 @@
                 <li><a href="product.html">商品專區</a></li>
                 <li><a href="about.html">關於我們</a></li>
                 <li><a href="contact.html">聯絡我們</a></li>
-                <li><a href="index.html"><img src="img/home.png" alt=""></a></li>
-                <li><a href="shopping.html"><img src="img/shopping-car.png"></a></li>
             </ul>
+            <div class="icon">
+                <a href="index.html">
+                    <img src="img/home.png" alt="">
+                </a>
+                <a href="shopping.html">
+                    <img src="img/shopping-car.png" alt="">
+                </a>
+            </div>
+            <button type="button" class="hamburger_icon">
+                <span class="-hr -top"></span>
+                <span class="-hr -middle"></span>
+                <span class="-hr -bottom"></span>
+            </button>
         </header>
-    
+
+    <!--背景圖  -->
+
     <div class="background"></div>
+
+       <!-- 商品專區 -->
+       
     <section>
         <nav class="section-wrapper">
             <div class="image">
@@ -58,12 +76,41 @@
             </div>
         </nav>
     </section>
+
+    <!-- 頁尾 -->
+    
     <footer>
         <p>
             本網站為緯育TibaMe前端設計工程師班TFD105學員專題作品，本平台僅供學習展示之用。
             若有侵權疑慮，您可以私訊(TibaMe-前端設計工程師養成班)，後續會由專人協助處理。
         </p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script>
+             // 按鈕的點擊
+        $(document).ready(function () {
+            $(".hamburger_icon").on("click", function (e) {
+                e.preventDefault();
+                $("body").toggleClass("menu-show");
+            });
+        });
+
+
+
+        // JavaScript 版本：DOM 載入完成之後執行
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // 按鈕狀態的切換
+            var hamburger_icon = document.getElementsByClassName("hamburger_icon")[0];
+            hamburger_icon.addEventListener("click", function () {
+                hamburger_icon.classList.toggle("-on");
+            });
+
+        });
+        </script>
 </body>
 
 </html>

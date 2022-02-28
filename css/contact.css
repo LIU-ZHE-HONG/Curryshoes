@@ -1,11 +1,19 @@
 @import url("reset.css");
 @import url("logo.css");
+/* contact page */
+
 
 /*body*/
+*{
+    box-sizing: border-box;
+}
 
 body{
     background-image: url(../img/background.png);
 }
+
+/* 聯絡我們 */
+
 section{
     margin: 0 auto;
 }
@@ -24,16 +32,16 @@ section h2{
     text-align: center;
 }
 
-section p1{
+section span{
     font-size: 24px;
     text-align: center;
     display: block;
 }
-section h2, section p1{
+section h2, section span{
     padding-top: 125px;
 }
 
-::placeholder{ 
+::placeholder{  /* 預留文字 */
     color:black;
     font-size: 24px;
 }
@@ -77,10 +85,10 @@ section div ul {
 
 img{
     width: 460px;
-    height: 675px;
 }
 
 /*footer*/
+
 footer{
     background-color: #000000;
     color: #ffffff;
@@ -89,7 +97,7 @@ footer{
 
 footer p{
     display: block;
-    width: 540px;
     font-size: 18px;
     margin: 0 auto;
+    padding: 10px;
 }

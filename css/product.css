@@ -4,29 +4,38 @@
 
 /*product-page*/
 
-body{
+/* body */
+*{
+    box-sizing: border-box;
+}
+
+body {
     background-image: url(../img/background.png);
 }
-  
-.wrapper{
-    width: 1260px;
-    margin: 0 auto;
-    
-}
-.background{
+
+/* 背景圖 */
+
+.background {
     background-color: #ffff00;
     width: 100%;
     height: 310px;
     display: block;
-  }
-
-/*image*/
-.image{
-    display: flex;
-    position: relative;  
 }
 
-.image h2{
+/* 商品專區 */
+
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+
+}
+
+.image {
+    display: flex;
+    position: relative;
+}
+
+.image h2 {
     background-color: blue;
     width: 380px;
     text-align: center;
@@ -43,36 +52,39 @@ body{
     margin: auto;
 }
 
-.image .shoes1{
+.image .shoes1 {
     margin: 0 70px;
 }
-.image .shoes1 a{
+
+.image .shoes1 a {
     display: block;
     margin: 245px 0;
     text-decoration: none;
-    color: #000000; 
+    color: #000000;
 }
 
-.image img{
+.image img {
     display: block;
     width: 190px;
     height: 200px;
 }
-.image p{
+
+.image p {
     border: 1px solid black;
 
 }
 
- /*footer*/
- footer{
+/*footer*/
+
+footer {
     background-color: #000000;
     color: #ffffff;
     display: flex;
 }
 
-footer p{
+footer p {
     display: block;
-    width: 540px;
     font-size: 18px;
-    margin:0 auto;
+    margin: 0 auto;
+    padding: 10px;
 }
