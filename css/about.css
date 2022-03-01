@@ -52,9 +52,10 @@ section .section-wrapper {
     font-size: 48px;
 }
 
-.image {
+.image img {
     display: block;
     width: 700px;
+    margin: 0 auto;
 
 }
 
@@ -69,6 +70,8 @@ section .section-wrapper {
 .image1 img {
     width: 995px;
     margin-bottom: 40px;
+    margin: 0 auto;
+    padding: 20px;
 
 }
 
@@ -81,9 +84,17 @@ section .section-wrapper {
 
     .section-wrapper h2 {
         font-size: 24px;
+        width: 200px;
+        text-align: center;
+        display: block;
     }
 
-    .image p {
+    .image img{
+        display: block;
+        width: 100%;
+    }
+
+    .image p, .image1 p {
         font-size: 18px;
         text-align: center;
     }
@@ -92,6 +103,8 @@ section .section-wrapper {
         display: block;
         max-width: 80% !important;
         height: auto !important;
+        margin: 0 auto;
+        padding: 10px;
     }
 }
 
@@ -105,7 +118,7 @@ footer {
 footer p {
     font-size: 18px;
     display: block;
-    margin-left: 300px;
+    text-align: center;
     padding: 10px;
 }
 @media screen and (max-width:768px) {

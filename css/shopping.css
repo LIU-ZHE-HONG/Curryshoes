@@ -17,9 +17,16 @@ body{
 /* 商品排列 */
 
 .wrapper{
-	width: 1260px;
 	margin: 0 auto;
 }
+
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+    .wrapper {
+        width: 100%;
+    }
+
+}
+
 
  .basketball{
 	padding: 125px 120px 0;
@@ -82,7 +89,6 @@ section h2{
 section ul{
     display: inline-block;
     width: 430px;
-    height: 250px;
     margin-bottom: 50px;
     font-size: 24px;
 }
@@ -101,4 +107,13 @@ footer p{
     font-size: 18px;
     margin: 0 auto;
 	padding: 10px;
+}
+
+@media screen and (max-width:768px) {
+    footer p {
+        font-size: 12px;
+        display: block;
+        margin: 0 auto;
+    }
+
 }

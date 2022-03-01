@@ -195,7 +195,6 @@ body {
        flex-direction: column;
        max-width: 70%;
        height: auto;
-       /* display: block; */
        align-items: center;
        justify-content: center;
     }

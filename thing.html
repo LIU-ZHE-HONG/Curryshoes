@@ -12,34 +12,34 @@
 <!-- 主選單 -->
 
 <body>
-        <header class="logo">
-            <a href="index.html"><img src="svg/logo.svg" alt=""></a>
-            <ul>
-                <li><a href="news.html">最新消息</a></li>
-                <li><a href="product.html">商品專區</a></li>
-                <li><a href="about.html">關於我們</a></li>
-                <li><a href="contact.html">聯絡我們</a></li>
-            </ul>
-            <div class="icon">
-                <a href="index.html">
-                    <img src="img/home.png" alt="">
-                </a>
-                <a href="shopping.html">
-                    <img src="img/shopping-car.png" alt="">
-                </a>
-            </div>
-            <button type="button" class="hamburger_icon">
-                <span class="-hr -top"></span>
-                <span class="-hr -middle"></span>
-                <span class="-hr -bottom"></span>
-            </button>
-        </header>
+    <header class="logo">
+        <a href="index.html"><img src="svg/logo.svg" alt=""></a>
+        <ul>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="product.html">商品專區</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+        <div class="icon">
+            <a href="index.html">
+                <img src="img/home.png" alt="">
+            </a>
+            <a href="shopping.html">
+                <img src="img/shopping-car.png" alt="">
+            </a>
+        </div>
+        <button type="button" class="hamburger_icon">
+            <span class="-hr -top"></span>
+            <span class="-hr -middle"></span>
+            <span class="-hr -bottom"></span>
+        </button>
+    </header>
 
     <!-- 背景圖 -->
 
     <div class="background"></div>
 
-       <!-- 產品 -->
+    <!-- 產品 -->
 
     <section>
         <nav class="section-wrapper">
@@ -86,10 +86,11 @@
                         </div>
                     </div>
                 </div>
-                    數量1
-                    加入購物車 
-                    7天無條件退換貨
-                </div>
+                <p> 
+                    數量1<br>
+                    加入購物車<br>
+                    7天無條件退換貨</p>
+
             </div>
             <div class="image">
                 <h2>相關產品</h2>
@@ -114,7 +115,7 @@
     </section>
 
     <!-- 頁尾 -->
-    
+
     <footer>
         <p>
             本網站為緯育TibaMe前端設計工程師班TFD105學員專題作品，本平台僅供學習展示之用。
@@ -124,8 +125,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-        <script>
-            // 按鈕的點擊
+    <script>
+        // 按鈕的點擊
         $(document).ready(function () {
             $(".hamburger_icon").on("click", function (e) {
                 e.preventDefault();
@@ -145,8 +146,8 @@
             });
 
         });
-        </script>
-</div>
+    </script>
+    </div>
 </body>
 
 </html>
