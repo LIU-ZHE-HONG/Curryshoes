@@ -74,7 +74,7 @@ h2{
 
 .image1{
   text-align: center;
-  padding-top: 400px;
+  padding-top: 50px;
 }
 
 .image1 img{
@@ -100,22 +100,10 @@ h2{
       display: block;
   }
 
-  .image img{
-      display: block;
-      width: 100%;
-  }
-
+  
   .image p, .image1 p {
       font-size: 18px;
       text-align: center;
-  }
-
-  .image1 img {
-      display: block;
-      max-width: 80% !important;
-      height: auto !important;
-      margin: 0 auto;
-      padding: 10px;
   }
 
 }

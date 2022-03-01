@@ -12,6 +12,9 @@
 body {
     background-image: url(../img/background.png);
 }
+carousel-inner img {
+    width: 50%;
+}
 
 /* 背景圖 */
 

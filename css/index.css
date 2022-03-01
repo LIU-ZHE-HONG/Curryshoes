@@ -193,8 +193,6 @@ body {
 @media screen and (max-width:768px) {
     .image {
        flex-direction: column;
-       max-width: 70%;
-       height: auto;
        align-items: center;
        justify-content: center;
     }
@@ -206,7 +204,6 @@ body {
     }
     .image img, .image p{
        display: block;
-       margin-left: 135px;
     }
 
 }
@@ -276,9 +273,20 @@ body {
 
 }
 
-.about div {
+.about .test2 {
     text-align: center;
     margin: 0 auto;
+    opacity: 0;
+    animation: word1 2s 1.5s forwards;
+}
+@keyframes word1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .about h2 {
@@ -306,7 +314,21 @@ body {
 .about img {
     width: 480px;
     margin: 0 auto;
+    animation: dep 1.5s .5s forwards;
+
 }
+@keyframes dep{
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .about {

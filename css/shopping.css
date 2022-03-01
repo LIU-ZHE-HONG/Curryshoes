@@ -19,6 +19,12 @@ body{
 .wrapper{
 	margin: 0 auto;
 }
+/* 讓購物車icon消失 */
+@media screen and (max-width:768px){
+    .logo .icon:last-child{
+        display: none;
+    }
+}
 
 @media screen and (min-width: 576px) and (max-width: 1200px) {
     .wrapper {
@@ -26,29 +32,19 @@ body{
     }
 }
 
-
- .basketball{
-	padding: 125px 120px 0;
-    width: 1140px;
-    margin: 0 auto;
-	box-sizing: border-box;
-}
  .basketball h2{
   font-size: 48px;
   text-align: center;
+  margin-top: 30px;
 } 
 @media screen and (max-width:768px){
-    .basketball{
-        width: 100%;
-    }
     .basketball h2{
-        font-size: 24px;
+        font-size: 36px;
     }
 }
  /*table*/
 
 table{
-	width: 700px;
 	margin:0 auto;
 	border: 1px solid black
 }
@@ -63,14 +59,6 @@ tr td{
 	text-align: center;
 }
 
-.list-no{
-	width: 50px;
-}
-
-.list-tl{
-	text-align: left;
-}
-
 td{
 	border: 1px solid #ccc;
 	padding: 20px;
@@ -79,27 +67,42 @@ td{
 
 section{
 	display: flex;
-	width: 280px;
-	margin-left: 250px;
-	
-}
-section div{
-    text-align: center;
-    margin: 0 auto;
+    padding-top: 20px;
+    justify-content: center;
 }
 
-section h2{
-    margin-bottom: 50px;
-    margin-top: 0px;
-    font-size: 48px;
+section .money{
+    margin: 0 20px;
 }
-section ul{
-    display: inline-block;
-    width: 430px;
-    margin-bottom: 50px;
+section .money h2{
+    font-size: 36px;
+}
+section .money ul{
+    display:block;
     font-size: 24px;
 }
+section .money ul li{
+    margin-top: 10px;
+}
 
+section .send h2{
+    font-size: 36px;
+}
+section .send ul{
+    font-size: 24px;
+}
+section .send ul li{
+    margin-top: 10px;
+}
+@media screen and (max-width:768px){
+    section .money h2, section .send h2{
+        font-size: 24px;
+    } 
+    section .money ul, section .send ul{
+        font-size: 18px;
+    }
+
+}
 
 /*footer*/
 
