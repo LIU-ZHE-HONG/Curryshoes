@@ -123,9 +123,3 @@ footer p {
     margin: 0 auto;
     padding: 10px;
 }
-@media screen and (max-width:768px) {
-    footer p {
-        font-size: 12px;
-    }
-
-}

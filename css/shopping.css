@@ -24,7 +24,6 @@ body{
     .wrapper {
         width: 100%;
     }
-
 }
 
 
@@ -38,6 +37,14 @@ body{
   font-size: 48px;
   text-align: center;
 } 
+@media screen and (max-width:768px){
+    .basketball{
+        width: 100%;
+    }
+    .basketball h2{
+        font-size: 24px;
+    }
+}
  /*table*/
 
 table{
@@ -109,11 +116,3 @@ footer p{
 	padding: 10px;
 }
 
-@media screen and (max-width:768px) {
-    footer p {
-        font-size: 12px;
-        display: block;
-        margin: 0 auto;
-    }
-
-}

@@ -353,15 +353,6 @@ footer p {
     padding: 10px;
 }
 
-@media screen and (max-width:768px) {
-    footer p {
-        font-size: 12px;
-        display: block;
-        margin: 0 auto;
-    }
-
-}
-
 /* 懸浮按鈕區 */
 .move {
     position: fixed;
