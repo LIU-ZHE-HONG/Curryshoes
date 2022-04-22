@@ -148,11 +148,13 @@ button.hamburger_icon.-on span.-hr.-bottom {
         width: 100%;
         text-align: center;
         transition: .1s;
+        background-color: white;
+        opacity: .5;
+       transition: 3s linear;
     }
 
     .logo li {
         margin: 0;
-        opacity: .7;
     }
 
     .logo li a {
