@@ -161,14 +161,11 @@ body {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
-    margin-top: 100px;
+    padding-bottom: 20px;
 }
 
 .image {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -185,7 +182,7 @@ body {
 
 .image img:hover {
     border-bottom: 2px dashed red;
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
 
