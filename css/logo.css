@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* 拿掉x軸 */
 body {
     font-family: arial, verdana, helvetica;
 }
@@ -119,7 +118,6 @@ button.hamburger_icon.-on span.-hr.-bottom {
 
 /* RWD */
 
-
 @media screen and (max-width:768px) {
     header {
         display: block;
@@ -127,14 +125,14 @@ button.hamburger_icon.-on span.-hr.-bottom {
         height: 100%;
         width: 100%;
     }
-    
+
     button.hamburger_icon {
         display: inline-block;
         text-decoration: none;
         margin-left: auto;
         z-index: 1;
     }
-   
+
     .logo ul {
         /* 隱藏選單 */
         max-height: 0px;
@@ -147,25 +145,20 @@ button.hamburger_icon.-on span.-hr.-bottom {
         top: 100px;
         width: 100%;
         text-align: center;
-        transition: .1s;
-        background-color: white;
-        opacity: .5;
-       transition: 3s linear;
+        background-color: rgba(0, 0, 0, .3);
+        transition: all 1s linear;
     }
 
     .logo li {
         margin: 0;
     }
 
-    .logo li a {
-        transition: all .3s;
-    }
-
     .logo li a:hover {
-      background-color: blue;
+        background-color: blue;
         color: yellow;
     }
-    .icon a:first-child{
+
+    .icon a:first-child {
         display: none;
     }
 
