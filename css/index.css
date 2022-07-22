@@ -22,7 +22,6 @@ body {
     margin: 0 auto;
 }
 
-
 @media screen and (min-width: 576px) and (max-width: 1200px) {
     .wrapper {
         width: 100%;
@@ -60,7 +59,6 @@ body {
     margin: 0 auto;
 }
 
-
 @keyframes curry {
     0% {
         transform: translateX(-200px);
@@ -92,10 +90,6 @@ body {
     display: block;
     text-align: center;
 }
-
-
-
-
 
 @media screen and (max-width:768px) {
 
@@ -133,7 +127,6 @@ body {
     }
 }
 
-
 /*影片*/
 
 .video {
@@ -154,7 +147,6 @@ body {
     width: 50%;
     height: 50%;
 }
-
 
 /*商品排列*/
 .picture h2 {
@@ -203,8 +195,6 @@ body {
     }
 
 }
-
-
 
 /*球隊比賽資訊*/
 .slide_box {
@@ -258,7 +248,6 @@ body {
         width: 100%;
     }
 }
-
 
 /*about*/
 
@@ -331,8 +320,6 @@ body {
         display: block;
     }
 
-   
-
     .about h2 {
         font-size: 24px;
         font-weight: bold;
@@ -349,6 +336,7 @@ body {
     .about a {
         margin-bottom: 20px;
     }
+
      .about img {
         display: block;
         max-width: 80% !important;
@@ -378,7 +366,6 @@ footer p {
     bottom: 100px;
     width: 50px;
 }
-
 
 .move i {
     color: #FFD700;

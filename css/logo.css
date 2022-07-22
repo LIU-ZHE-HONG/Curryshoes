@@ -1,5 +1,3 @@
-@import url("reset.css");
-
 * {
     box-sizing: border-box;
 }
@@ -117,7 +115,6 @@ button.hamburger_icon.-on span.-hr.-bottom {
 }
 
 /* RWD */
-
 @media screen and (max-width:768px) {
     header {
         display: block;
